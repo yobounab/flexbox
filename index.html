@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <section class="top">
+        <h1>Youcef O. Bounab</h1>
+        <h2>Born and raised in Algeria, I moved to New York in March 2018, where I also developed my passion for photography and, most recently, for film photography.</h2>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="main_img" src="images/headshot1.jpg">
+        <figcaption>In Washington Square Park, fall 2019. <span class="credit">Credit: Jinyue Song</span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p>New York City is the perfect city to photograph. Its diverse architecture and people make it all the more special.</p>
+        <p>As I was still getting to know the city, it was fun to take a picture of things and people that I encountered everywhere I went. You can follow me on <a href="https://www.instagram.com/Lens.eur/">Instagram.</a></p>
+      </section>
+
+      <h3 class="flex-hed">Here are three photos I recently shot with my Lubitel 166 Universal</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="small" src="images/manunderthebridge.jpg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap">Man Under the Bridge. <span class="credit">Credit: Youcef O. Bounab</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>I was on the Wall-Street-bound ferry when I took this picture. The moment the ferry went under the Manhattan Bridge made it perfect as the bridge filled the space in the background.</p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/julia.jpg">
+            <figcaption class="sub_cap">Julia and her friend, Mckenna. <span class="credit">Credit: Youcef O. Bounab</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>I also took this picture on the same ferry, moments after we had gone under the Manhattan Bridge.</p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/littlee.jpg">
+            <figcaption class="sub_cap">Little E. <span class="credit">Credit: Youcef O. Bounab</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>This one is a little out of focus, but its actual state holds a meaning. This is my friend's cat, Little E, and the day after I took this photo he went back to China. A picture of him "fading away" couldn't be more accurate </p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
